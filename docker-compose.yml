@@ -1,0 +1,13 @@
+version: '3.6'   # Docker Engine release 18.02.0+
+
+services:
+  backend:
+    image: uuderder/unifi_backend
+    ports:
+      - 8888:8888
+
+  frontend:
+    image: uuderder/unifi_frontend
+    ports:
+      - 3000:3000
+
